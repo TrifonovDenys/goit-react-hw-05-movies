@@ -64,7 +64,6 @@ const MoviesPage = () => {
     const fetchData = async () => {
       try {
         const response = await theMovieSearchAPI(`?query=${query}`);
-        console.log(response);
         setArr(response);
     //     if( response.length === 0 ) toast.error('No movie for you search', {
     //       position: "top-right",

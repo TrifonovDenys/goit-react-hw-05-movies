@@ -22,7 +22,7 @@ const Cast = () => {
     <>
       <p className={css.cast_title}>cast</p>
     <ul className={css.list}>
-        {cast.map(({cast_id, name, character, profile_path}) => {
+        {cast.length === 0 ? <p>We don`t have any cast for this movie</p> :cast.map(({cast_id, name, character, profile_path}) => {
           return(
           <li className={css.item} key={cast_id}>
               <img src={(profile_path ? `https://image.tmdb.org/t/p/original${profile_path}`:   img)} alt="" width={300} />
