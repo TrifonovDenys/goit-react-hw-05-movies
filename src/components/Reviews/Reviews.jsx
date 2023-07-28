@@ -15,21 +15,22 @@ const Reviews = () => {
     }
   };
     fetchData();
-  },[movieId])
+  }, [movieId])
+  
+
   return (
     <>
       <p className={css.reviews_title}>reviews</p>
-    <ul>
-        {reviews && reviews.map(({id, author, content}) => {
-          return(
-          <li className={css.item} key={id}>
-              <p className={css.author}>{author}</p>
-              <p className={css.reviews}>{content}</p>
-          </li>)
-        })}
-    </ul>
-    </>
-    
+      <ul>
+          { reviews.length === 0 ? <p>We don`t have any rewiews for this movie</p> : reviews.map(({id, author, content}) => {
+            return(
+            <li className={css.item} key={id}>
+                <p className={css.author}>{author}</p>
+                <p className={css.reviews}>{content}</p>
+            </li>)
+          })}
+      </ul>
+    </>   
   )
 }
 

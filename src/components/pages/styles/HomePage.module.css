@@ -1,3 +1,27 @@
+.input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin-right: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.button_search{
+  background: #e7e7e7;
+  border: 1px solid #504f4f;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.button_search:hover {
+  background: #303030;
+  color: aliceblue;
+}
+
 .title{
   font-size: 28px;
   padding: 20px 0 10px;
